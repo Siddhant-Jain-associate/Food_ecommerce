@@ -1,6 +1,6 @@
 # Food Ecommerce Website
 
-# Tech Stack Used: 
+### Tech Stack Used: 
 * React
 * Javascript
 * Eslint
