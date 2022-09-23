@@ -1,9 +1,9 @@
-import React from 'react';
+import { Header } from './components/Layouts';
 
-function App() {
-  return (
-    <h2>{'Let\'s get started!'}</h2>
-  );
-}
+const App = () => (
+  <>
+    <Header />
+  </>
+);
 
 export default App;

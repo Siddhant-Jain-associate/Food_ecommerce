@@ -1,18 +1,17 @@
-import React from 'react';
+import Meals from '../../assets/meals.jpg';
+import classes from './Header.module.css';
 
-function Header() {
-  return (
-    <>
-      <header>
-        <h1>Delicious Meals Corner</h1>
-        <button type="submit">Cart</button>
-      </header>
-      <div>
-        <img alt="Come to have a taste a varities of Delicious Food" />
-      </div>
-    </>
-  );
-}
+const Header = () => (
+  <>
+    <header className={classes.header}>
+      <h1>ReactMeals</h1>
+      <button type="submit">Cart</button>
+    </header>
+    <div className={classes['main-image']}>
+      <img src={Meals} alt="Come to have a taste a varities of Delicious Food" />
+    </div>
+  </>
+);
 
 Header.propTypes = {};
 
