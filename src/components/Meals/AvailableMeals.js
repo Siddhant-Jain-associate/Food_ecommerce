@@ -6,9 +6,13 @@ import { Card } from '../UI';
 
 const AvailableMeals = () => {
   const mealsList = MOCK_MEALS.map((meal) => {
-    const { name, description, price } = meal;
+    const {
+      id, name, description, price,
+    } = meal;
     return (
       <MealItem
+        id={id}
+        key={id}
         name={name}
         description={description}
         price={price}

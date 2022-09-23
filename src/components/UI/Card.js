@@ -10,7 +10,7 @@ const Card = (props) => {
 };
 
 Card.propTypes = {
-  children: PropTypes.instanceOf(HTMLElement),
+  children: PropTypes.arrayOf(PropTypes.element),
 };
 Card.defaultProps = {
   children: <h1>No List Found!!</h1>,
