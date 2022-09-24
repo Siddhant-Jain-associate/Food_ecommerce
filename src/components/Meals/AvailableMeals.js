@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { MOCK_MEALS } from './mocks';
 import classes from './AvailableMeals.module.css';
 import { MealItem } from './MealItem';

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import PropTypes from 'prop-types';
 import classes from './MealInputForm.module.css';
 import { Input } from '../../UI';
