@@ -57,5 +57,6 @@
     "hooks": {
       "pre-commit": "npm run lint"
     }
-  }
+  },
+  "type": "module"
 }
