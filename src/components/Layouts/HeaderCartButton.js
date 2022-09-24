@@ -1,22 +1,27 @@
-import React from 'react';
-import CartIcon from '../Cart/CartIcon';
+import PropTypes from 'prop-types';
+import { CartIcon } from '../Cart';
 import classes from './HeaderCartButton.module.css';
 
 
-const HeaderCartButton = () => (
-  <button type="submit" className={classes.button}>
-    <span className={classes.icon}>
-      <CartIcon />
-    </span>
-    <span>
-      Your Cart
-    </span>
-    <span className={classes.badge}>
-      3
-    </span>
-  </button>
-);
+const HeaderCartButton = (props) => {
+  const { onClick } = props;
+  return (
+    <button type="button" className={classes.button} onClick={onClick}>
+      <span className={classes.icon}>
+        <CartIcon />
+      </span>
+      <span>
+        Your Cart
+      </span>
+      <span className={classes.badge}>
+        3
+      </span>
+    </button>
+  );
+};
 
-HeaderCartButton.propTypes = {};
+HeaderCartButton.propTypes = {
+  onClick: PropTypes.func.isRequired,
+};
 
 export default HeaderCartButton;
