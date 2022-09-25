@@ -14,6 +14,7 @@ const Cart = (props) => {
     } = dishesInCart;
     return (
       <CartItem
+        id={id}
         key={id}
         name={name}
         price={price}
