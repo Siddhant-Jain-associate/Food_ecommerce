@@ -1,4 +1,3 @@
-
 import { MOCK_MEALS } from './mocks';
 import classes from './AvailableMeals.module.css';
 import { MealItem } from './MealItem';
@@ -19,11 +18,11 @@ const AvailableMeals = () => {
       />
     );
   });
+
   return (
     <div className={classes.meals}>
       <ul>
         <Card>{mealsList}</Card>
-
       </ul>
     </div>
   );
